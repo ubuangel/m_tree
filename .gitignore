@@ -31,6 +31,9 @@ docs/_build
 .bbl 
 .lof 
 .log 
+
+*.log
+
 .lot 
 .glo 
 .glx 
