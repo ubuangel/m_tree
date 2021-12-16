@@ -82,16 +82,44 @@ Esta es una implementación del árbol M, una estructura de datos para encontrar
 El árbol M es una implementación basada en Tree enfocado en el   espacio métrico
 \url{http://en.wikipedia.org/wiki/Metric_space}, es similar al árbol B.
 
-Implementación basada en el papel
-'M-tree: Un método de acceso eficiente para la búsqueda de similitudes en espacios métricos'
+ Una forma  de acceso eficiente para la búsqueda de similitudes en espacios métricos'
 
-Para usar el  MTree solo necesitas pasarle dos cosas:
+Para usar el  MTree solo necesitamos pasarle dos cosas:
 \begin{itemize}
     \item Un conjunto de objetos para almacenar.
     
     \item Una función de distancia 'd (x, y)' que devuelve un número que establece
 qué tan similares son dos objetos.
 \end{itemize}
+
+\subsection{Configuracion}
+
+
+
+
+El proyecto se corrio en ubuntu 20.04 para su ejecucion se realizo:
+
+\begin{itemize}
+
+\item  instalar python 2
+
+\item crear un entorno virtual
+
+
+\item  En la raiz del proyecto usar consola intereactiva de python y importar MTree
+
+\item Finalmente desplegar seteando los parametros
+
+\end{itemize}
+
+   
+
+    
+
+   
+
+    
+
 
 \begin{figure}[H]
   \centering
@@ -175,19 +203,58 @@ a) El quinto elemento de la tabla(North Macedonia)
 b) El décimo elemento de la tabla(Gibraltar)
 c) El último elemento de la tabla(USA)
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/Captura de pantalla de 2021-12-16 10-04-01.png}
+\end{figure}
+
 \item Dada una distancia de 37000, cuantos y cuales son los países más próximos a Perú (mostrar la búsqueda ejecutada y el
 resultado en el lenguaje de programación escogido)
+\\\\
+Calculando distancia entre la coordenada x y y.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/Captura de pantalla de 2021-12-16 10-13-51.png}
+\end{figure}
+buscando los mas proximos:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/Captura de pantalla de 2021-12-16 10-17-42.png}
+\end{figure}
 
+Bulgaria y Hosnia Herzegovina
+\\\\
+verificar
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/Captura de pantalla de 2021-12-16 10-26-06.png}
+\end{figure}
 
 \item Cual es el país más próximo de Hungary. (mostrar la búsqueda ejecutada y el resultado en el lenguaje de programación
 escogido)
 
 
-\item Cual de las coordenadas (x o y) es la más determinante en el cálculo de las distancias?
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/Captura de pantalla de 2021-12-16 10-10-22.png}
+\end{figure}
 
+
+\item Cual de las coordenadas (x o y) es la más determinante en el cálculo de las distancias?\\\\
+Ejemplo de Peru
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/Captura de pantalla de 2021-12-16 10-13-51.png}
+\end{figure}
+
+La coordenada x asi nose generaría resultados negativos tambien el resultado me da la coordenada x. 
 
 \item Utilice el conjunto de datos proporcionado en la tabla 2 para determinar si existe influencia del orden de inserción de los
 datos en el resultado de la búsquedas en términos de los nodos recorridos para generar la respuesta.
+
+Se realizo la misma inserción que el paso anterior ,
+
+
 
 
 
